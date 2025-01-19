@@ -66,7 +66,7 @@ public class TaskServiceImpl implements TaskService {
         }
         return Response.<TaskDto>builder()
                 .content(taskdto)
-                .message("No tasks found")
+                .message("Task created successfully")
                 .httpStatus(HttpStatus.OK) // Return OK for empty list
                 .timestamp(LocalDateTime.now())
                 .build();

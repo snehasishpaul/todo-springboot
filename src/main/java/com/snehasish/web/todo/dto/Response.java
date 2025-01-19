@@ -13,10 +13,10 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Response<T> {
+    private T content;
     private LocalDateTime timestamp;
     private String message;
     private HttpStatus httpStatus;
-    private T content;
 
     // Ensure the builder supports generics
     public static class ResponseBuilder<T> {

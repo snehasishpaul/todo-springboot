@@ -14,6 +14,6 @@ public class TaskDto {
     private Long id;
     @NotBlank
     private String title;
-    @NotBlank
+
     private boolean completed;
 }
